@@ -1,21 +1,17 @@
+let calculatorPage = require('../pages/calculatorPage.js');
+
 describe('SCT001 - Super Calculator Test', function(){
     it('TC001 - Can add two numbers', function(){
-        browser.get('http://juliemr.github.io/protractor-demo/');
-        let firstNumber = element(by.model('first'));
-        firstNumber.sendKeys(5);
+        calculatorPage.goToPage('http://juliemr.github.io/protractor-demo/');
 
-        let operator = element.all(by.options('value for (key, value) in operators'));
-        operator.click();
-        operator.first().click();
+        calculatorPage.enterFirstNumber(5);
+        calculatorPage.enterSecondNumber(4);
+        calculatorPage.chooseOperator('+');
+        calculatorPage.clickGoButton();
 
-        let secondNumber = element(by.model('second'));
-        secondNumber.sendKeys(4);
+        calculatorPage.waitAndCheckForResult(9);
 
-        element(by.id('gobutton')).click();
-
-        browser.waitForAngular(element('h2')).then(function(){
-            expect(element(by.css('h2')).getText()).toBe('9');
-        });
+        browser.sleep(3000);
     });
 
     // it('TC002 - Can subtract two numbers', function(){
