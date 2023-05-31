@@ -1,0 +1,8 @@
+#Ignore test result folder
+*.png
+*.xml
+*.html
+results/allure-reporter/
+results/html-reporter/
+results/html-reporter/screenshots/
+results/screenshot-reporter/
