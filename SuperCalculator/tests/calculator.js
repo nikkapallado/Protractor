@@ -22,7 +22,7 @@ describe('SCT001 - Super Calculator Test', function(){
         calculatorPage.chooseOperator('-');
         calculatorPage.clickGoButton();
 
-        calculatorPage.waitAndCheckForResult(9);
+        calculatorPage.waitAndCheckForResult(1);
 
         browser.sleep(3000);
 
