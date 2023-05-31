@@ -1,17 +1,25 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685496209527' stop='1685496215401'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685500619910' stop='1685500631046'>
     <name>SCT001 - Super Calculator Test</name>
     <title>SCT001 - Super Calculator Test</title>
     <test-cases>
-        <test-case start='1685496209527' status='failed' stop='1685496215401'>
+        <test-case start='1685500619911' status='passed' stop='1685500625613'>
             <name>TC001 - Can add two numbers</name>
             <title>TC001 - Can add two numbers</title>
             <labels/>
             <parameters/>
             <steps/>
             <attachments/>
+        </test-case>
+        <test-case start='1685500625613' status='failed' stop='1685500631043'>
+            <name>TC002 - Can subtract two numbers</name>
+            <title>TC002 - Can subtract two numbers</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
             <failure>
-                <message>Expected '9' to be '10'.</message>
+                <message>Expected '1' to be '10'.</message>
                 <stack-trace>Error: Failed expectation
                     at C:\Users\npallado\Desktop\Automation\Practice\Protractor\SuperCalculator\pages\calculatorPage.js:31:52
                     at ManagedPromise.invokeCallback_ (C:\Users\npallado\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
