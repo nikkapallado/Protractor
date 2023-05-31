@@ -2,4 +2,4 @@
 Automation project using protractor
 
 # How to run tests
-protractor ":path to configuration file"
+protractor ":path to conf file"
