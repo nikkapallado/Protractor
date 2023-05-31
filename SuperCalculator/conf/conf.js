@@ -34,7 +34,11 @@ exports.config = {
 
   // Assign the test reporter to each running instance
   onPrepare: function() {
-    jasmine.getEnv().addReporter(reporter);
+    jasmine.getEnv().addReporter(reporter); //basic reporter
+    var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
+    }));
   },
 
   // Close the report after all tests finish
